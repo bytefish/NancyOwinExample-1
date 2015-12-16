@@ -5,7 +5,6 @@ namespace TokenAuthentication.Infrastructure.Authentication
 {
     public static class SampleClaimTypes
     {
-        public const string Identifier = "urn:sample:id";
         public const string Admin = "urn:sample:admin";
     }
 }
