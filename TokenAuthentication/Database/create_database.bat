@@ -45,6 +45,9 @@ set /p PGPASSWORD="Password: "
 	
 	:: Security
 	%PGSQL_EXECUTABLE% -h %HostName% -p %PortNumber% -d %DatabaseName% -U %UserName% < 05_Security/security_auth.sql -L %LOGFILE%
+	
+	:: Data
+	%PGSQL_EXECUTABLE% -h %HostName% -p %PortNumber% -d %DatabaseName% -U %UserName% < 06_Data/data_auth.sql -L %LOGFILE%
 )
 
 goto :end
